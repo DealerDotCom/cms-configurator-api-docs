@@ -10,6 +10,13 @@
   
   `POST`
   
+*  **Headers**
+
+   **Required:**
+ 
+   `x-api-key=[string]` - API Key required to authenticate and allow request to perform the operation </br>
+   `ddc-site-id=[string]` - Site ID that the request is aimed to perform changes
+
 *  **URL Params**
 
    **Required:**
@@ -23,7 +30,6 @@
 * **Data Params**
 ```
   {
-    "siteId": "targetSiteId",
     "pageId":  "SOURCE_PAGE_ID", 
     "title": {
       "en_US": "Api Page Title"

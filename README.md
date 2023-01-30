@@ -3,8 +3,7 @@
 API for interacting with sites and content hosted on Dealer.com's Content Management System. 
 
 ## End Points
-End points should include the API version number as part of the path. New versions will be published in the [ReleaseNotes/Changelog](changelog.md)
-**TODO: Create/link to changelog** 
+End points should include the API version number as part of the path. New versions will be published in the [Release Notes](./release-notes.md)
 
 | Action | Http Method | URL |
 | ---- | ---- | ---- |

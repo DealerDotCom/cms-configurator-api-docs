@@ -1,6 +1,6 @@
 **CMS-Configurator API**
 ----
-  <_Additional information about your application._>
+API for interacting with sites and content hosted on Dealer.com's Content Management System. 
 
 ## End Points
 | Action | Http Method | URL |

@@ -24,10 +24,6 @@ Method call to remove a sitemap entry from a given site
 
   * **Code:** 401 UNAUTHORIZED <br />
     **Content:** `{ error : "Not Authorized, please provide API key" }`
-  OR
-  
-  * **Code:** 501 NOT_IMPLEMENTED <br />
-    **Content:** `{ error : "Method Not Implemented" }`
 
   OR
 

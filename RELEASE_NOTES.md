@@ -3,6 +3,7 @@ All notable releases to this project will be documented in this file.
 
 this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# V1 
 ## [0.0.2] - Unreleased
 **Updated**
 * API key authentication to use query instead of scan

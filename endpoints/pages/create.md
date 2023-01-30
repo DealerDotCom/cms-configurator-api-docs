@@ -1,56 +1,120 @@
 **Create Page**
-----
-  <_Additional information about your API call. Try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple)._>
+
+  This endpoint works for creating a new page in a specific Site.
 
 * **URL**
 
-  <_The URL Structure (path only, no root url)_>
+  /api/{version}/pages
 
 * **Method:**
   
-  <_The request type_>
-
-  `GET` | `POST` | `DELETE` | `PUT`
+  `POST`
   
 *  **URL Params**
 
-   <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
-
    **Required:**
  
-   `id=[integer]`
+   `version=[string]` - API version, a string that specifies the version of the API the developer wants to contact. Current valid value is `v1`
 
    **Optional:**
  
-   `photo_id=[alphanumeric]`
+   No optional parameters supported.
 
 * **Data Params**
 
-  <_If making a post request, what should the body payload look like? URL Params rules apply here too._>
+  {
+        "siteId": "targetSiteId",
+        "pageId":  "SOURCE_PAGE_ID", 
+        "title": {
+          "en_US": "Api Page Title"
+        },
+        "path": {
+          "en_US": "/api-page-path.html"
+        },
+        "addToXMLSitemap": true,
+        "addToHTMLSitemap": false,
+        "metadata": {
+          "title": {
+            "en_US": "META TITLE"
+          },
+          "description": {
+            "en_US": "META DESCRIPTION"
+          },
+          "keywords": {
+            "en_US":  "METATAGS1 METATAGS2"
+          }
+        },
+        "content": {
+          "raw-content1": { // corresponds to named content areas in individual pages ( page config documented in API )
+            "en_US": "<div class='dynamic-content **'/>"
+          },
+          "raw-content2": {
+            "en_US": "<div class='dynamic-content some-other-identifier-class'/>"
+          },
+          "raw-content3": {
+            "en_US": ""
+          }
+        }
+      }
 
 * **Success Response:**
-  
-  <_What should the status code be on success and is there any returned data? This is useful when people need to to know what their callbacks should expect!_>
 
-  * **Code:** 200 <br />
-    **Content:** `{ id : 12 }`
+  * **Code:** 201 <br />
+    **Content:** `{ url: "{domain}/your-created-page.html" }`
  
 * **Error Response:**
 
   <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "Log in" }`
+  * **Code:** 406 NOT ACCEPTABLE <br />
+    **Content:** TBD
 
   OR
 
-  * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `{ error : "Email Invalid" }`
+  * **Code:** 500 INTERNAL SERVER ERROR <br />
+    **Content:** TBD
 
 * **Sample Call:**
 
-  <_Just a sample call to your endpoint in a runnable format ($.ajax call or a curl request) - this makes life easier and more predictable._> 
+ curl --location --request POST 'https://www.domain.com/api/v1/pages' \
+--header 'Accept: application/json' \
+--header 'x-api-key: yourProvidedAPIKey' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "siteId": "targetSiteId",
+        "pageId":  "SOURCE_PAGE_ID", 
+        "title": {
+          "en_US": "Api Page Title"
+        },
+        "path": {
+          "en_US": "/api-page-path.html"
+        },
+        "addToXMLSitemap": true,
+        "addToHTMLSitemap": false,
+        "metadata": {
+          "title": {
+            "en_US": "META TITLE"
+          },
+          "description": {
+            "en_US": "META DESCRIPTION"
+          },
+          "keywords": {
+            "en_US":  "METATAGS1 METATAGS2"
+          }
+        },
+        "content": {
+          "raw-content1": {
+            "en_US": "<div class='\''dynamic-content **'\''/>"
+          },
+          "raw-content2": {
+            "en_US": "<div class='\''dynamic-content some-other-identifier-class'\''/>"
+          },
+          "raw-content3": {
+            "en_US": ""
+          }
+        }
+      }'
 
 * **Notes:**
 
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._> 
+ This endpoint is still under construction and continuous improvement, so please note that the specs and definitions may change.

@@ -4,8 +4,8 @@
 
 * **End Points**
 
-- [Create Page](./endpoints/pages/create)]
-- [Delete Page](./endpoints/pages/delete)]
+- [Create Page](./endpoints/pages/create.md)
+- [Delete Page](./endpoints/pages/delete.md)
   
 <_additional links to end point specific documentation_>
 

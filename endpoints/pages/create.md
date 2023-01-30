@@ -21,7 +21,7 @@
    No optional parameters supported.
 
 * **Data Params**
-
+```
   {
     "siteId": "targetSiteId",
     "pageId":  "SOURCE_PAGE_ID", 
@@ -56,15 +56,13 @@
       }
     }
   }
-
+```
 * **Success Response:**
 
   * **Code:** 201 <br />
     **Content:** `{ url: "{domain}/your-created-page.html" }`
  
 * **Error Response:**
-
-  <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
 
   * **Code:** 406 NOT ACCEPTABLE <br />
     **Content:** TBD
@@ -75,7 +73,7 @@
     **Content:** TBD
 
 * **Sample Call:**
-
+```
  curl --location --request POST 'https://www.domain.com/api/v1/pages' \
 --header 'Accept: application/json' \
 --header 'x-api-key: yourProvidedAPIKey' \
@@ -114,7 +112,7 @@
           }
         }
       }'
-
+```
 * **Notes:**
 
  This endpoint is still under construction and continuous improvement, so please note that the specs and definitions may change.

@@ -8,8 +8,16 @@ API for interacting with sites and content hosted on Dealer.com's Content Manage
 | [Create Page](./endpoints/pages/create.md) | POST | /api/{version}/pages |
 | [Delete Page](./endpoints/pages/delete.md) | POST | /api/{version}/pages/delete |
   
-<_additional links to end point specific documentation_>
+### Authentication
+Calls requires an API Key that can be provided to you by request. The API key request should contain a list of siteIds to be associated with your key. Once given your API you should include this key in your request headers to authenticate. 
+**TODO: create/link to getting started guide**
+
+### Rate Limiting 
+All calls through the API are subject to rate limiting. Your calls to the API should be prepared to handle retry / load shedding responses. 
+**TODO: create/link to page with retry examples**  
+
+### Reporting Issues: 
+Issues with this API can be reported by opening a [GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). 
 
 ### **Notes:**
-
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._> 
+This API is currently under development and subject to change.

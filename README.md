@@ -12,6 +12,10 @@ End points should include the API version number as part of the path. New versio
   
 ### Authentication
 Calls requires an API Key that can be provided to you by request. The API key request should contain a list of siteIds to be associated with your key. Once given your API you should include this key in your request headers to authenticate. 
+#### Authentication Error Response:
+* Code: 401 Unauthorized
+Content: TBD
+
 **TODO: create/link to getting started guide**
 
 ### Rate Limiting 

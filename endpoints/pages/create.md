@@ -30,7 +30,6 @@
 * **Data Params**
 ```
   {
-    "siteId": "targetSiteId",
     "pageId":  "SOURCE_PAGE_ID", 
     "title": {
       "en_US": "Api Page Title"

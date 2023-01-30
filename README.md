@@ -4,7 +4,10 @@
 
 * **End Points**
 
-  <_links to end point specific documentation_>
+- [Create Page](./endpoints/pages/create)]
+- [Delete Page](./endpoints/pages/delete)]
+  
+<_additional links to end point specific documentation_>
 
 * **Notes:**
 

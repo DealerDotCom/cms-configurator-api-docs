@@ -4,8 +4,8 @@
 
 ## End Points
 
-- [Create Page](./endpoints/pages/create.md)
-- [Delete Page](./endpoints/pages/delete.md)
+- [Create Page](./endpoints/pages/create.md) POST /api/{version}/pages
+- [Delete Page](./endpoints/pages/delete.md) POST /api/{version}/pages/delete
   
 <_additional links to end point specific documentation_>
 

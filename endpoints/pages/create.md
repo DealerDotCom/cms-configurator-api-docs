@@ -23,39 +23,39 @@
 * **Data Params**
 
   {
-        "siteId": "targetSiteId",
-        "pageId":  "SOURCE_PAGE_ID", 
-        "title": {
-          "en_US": "Api Page Title"
-        },
-        "path": {
-          "en_US": "/api-page-path.html"
-        },
-        "addToXMLSitemap": true,
-        "addToHTMLSitemap": false,
-        "metadata": {
-          "title": {
-            "en_US": "META TITLE"
-          },
-          "description": {
-            "en_US": "META DESCRIPTION"
-          },
-          "keywords": {
-            "en_US":  "METATAGS1 METATAGS2"
-          }
-        },
-        "content": {
-          "raw-content1": { // corresponds to named content areas in individual pages ( page config documented in API )
-            "en_US": "<div class='dynamic-content **'/>"
-          },
-          "raw-content2": {
-            "en_US": "<div class='dynamic-content some-other-identifier-class'/>"
-          },
-          "raw-content3": {
-            "en_US": ""
-          }
-        }
+    "siteId": "targetSiteId",
+    "pageId":  "SOURCE_PAGE_ID", 
+    "title": {
+      "en_US": "Api Page Title"
+    },
+    "path": {
+      "en_US": "/api-page-path.html"
+    },
+    "addToXMLSitemap": true,
+    "addToHTMLSitemap": false,
+    "metadata": {
+      "title": {
+        "en_US": "META TITLE"
+      },
+      "description": {
+        "en_US": "META DESCRIPTION"
+      },
+      "keywords": {
+        "en_US":  "METATAGS1 METATAGS2"
       }
+    },
+    "content": {
+      "raw-content1": { // corresponds to named content areas in individual pages ( page config documented in API )
+        "en_US": "<div class='dynamic-content **'/>"
+      },
+      "raw-content2": {
+        "en_US": "<div class='dynamic-content some-other-identifier-class'/>"
+      },
+      "raw-content3": {
+        "en_US": ""
+      }
+    }
+  }
 
 * **Success Response:**
 

@@ -1,4 +1,4 @@
-**Create Page**
+# Create Page
 
   This endpoint works for creating a new page in a specific Site.
 
@@ -28,14 +28,15 @@
    No optional parameters supported.
 
 * **Data Params**
+[See available pages](#available-pages) for available layouts and their windowIds
 ```
   {
-    "pageId":  "SOURCE_PAGE_ID", 
+    "pageId":  "v9_CONTENT_RAW_FULL_WIDTH_DEFAULT_V1_1", 
     "title": {
-      "en_US": "Api Page Title"
+      "en_US": "Api Page Title" 
     },
     "path": {
-      "en_US": "/api-page-path.html"
+      "en_US": "/api-page-path.html" 
     },
     "addToXMLSitemap": true,
     "addToHTMLSitemap": false,
@@ -53,12 +54,6 @@
     "content": {
       "raw-content1": { // corresponds to named content areas in individual pages ( page config documented in API )
         "en_US": "<div class='dynamic-content **'/>"
-      },
-      "raw-content2": {
-        "en_US": "<div class='dynamic-content some-other-identifier-class'/>"
-      },
-      "raw-content3": {
-        "en_US": ""
       }
     }
   }
@@ -109,16 +104,20 @@
         "content": {
           "raw-content1": {
             "en_US": "<div class='\''dynamic-content **'\''/>"
-          },
-          "raw-content2": {
-            "en_US": "<div class='\''dynamic-content some-other-identifier-class'\''/>"
-          },
-          "raw-content3": {
-            "en_US": ""
           }
         }
       }'
 ```
+
+### Available Pages
+**pageId** property should be supplied in the payload to the API. You can chose from the pages below and send content associated with each windowId in the **content** block. If content is omitted pages will render as blank pages. <br/> In the example payload above you can see we provided pageId: v9_CONTENT_RAW_FULL_WIDTH_DEFAULT_V1_1 and content windowId "raw-content1" 
+ 
+| PageID | Description | Content WindowIds |
+| ----- | ----- | ----- |
+| v9_CONTENT_RAW_FULL_WIDTH_DEFAULT_V1_1 | Full width page with a page title element and a single raw content area | "raw-content1" |
+| v9_CONTENT_RAW_FULL_WIDTH_NO_TITLE_V1_1 | Full width page with a single raw content area | "raw-content1" |
+
+
 * **Notes:**
 
  This endpoint is still under construction and continuous improvement, so please note that the specs and definitions may change.

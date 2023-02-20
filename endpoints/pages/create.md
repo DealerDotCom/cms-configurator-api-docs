@@ -72,6 +72,8 @@
 
   * **Code:** 500 INTERNAL SERVER ERROR <br />
     **Content:** TBD
+    
+> *You may see messages about failures to post metadata and/or content. Your page was still created and you can use the Composer interface to fill out any missing content.*
 
 * **Sample Call:**
 ```

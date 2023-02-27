@@ -27,6 +27,11 @@ Content:
 ```
 **TODO: create/link to getting started guide**
 
+### CORS
+This api is [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) enabled.
+
+If specific domains need to be allowed for CORS requests, please contact your Dealer.com rep.
+
 ### Rate Limiting 
 All calls through the API are subject to rate limiting. Your calls to the API should be prepared to handle retry / load shedding responses. 
 **TODO: create/link to page with retry examples**  

@@ -15,7 +15,7 @@ Method call to remove a sitemap entry from a given site
    `x-api-key=[string]` - API Key required to authenticate and allow request to perform the operation </br>
    `ddc-site-id=[string]` - Site ID that the request is aimed to perform changes
   
-* **Data Params** Requires JSON payload with following properties 
+* **URL Params**
   
   **Required:**
  
@@ -29,14 +29,12 @@ Method call to remove a sitemap entry from a given site
 * **Error Response:**
 
   * **Code:** 400 BAD REQUEST <br />
-    **Content:** Client Error Message
+    **Content:** `Payload invalid: Path required for DELETE action`
 
   OR
 
   * **Code:** 500 INTERNAL SERVER ERROR <br />
     **Content:** Server Error Message
-
-* **Sample Call:**
 
 * **Notes:**
 

@@ -3,10 +3,10 @@
 Method call to remove a sitemap entry from a given site
 
 * **URL**
-/api/{version}/pages/delete
+/api/{version}/pages
 
 * **Method:**
-  `POST`
+  `DELETE`
   
 *  **Headers**
 

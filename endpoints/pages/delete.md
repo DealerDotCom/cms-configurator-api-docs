@@ -23,21 +23,21 @@ Method call to remove a sitemap entry from a given site
 
 * **Success Response:**
 
-  * **Code:** 501 NOT_IMPLEMENTED <br />
-    **Content:** `{ id : 12 }`
+  * **Code:** 200 <br />
+    **Content:** `DELETE request received for [siteId] and [page_alias]`
  
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "Not Authorized, please provide API key" }`
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** Client Error Message
 
   OR
 
-  * **Code:** 422 UNPROCESSABLE ENTRY <br />
-    **Content:** `{ error : "Email Invalid" }`
+  * **Code:** 500 INTERNAL SERVER ERROR <br />
+    **Content:** Server Error Message
 
 * **Sample Call:**
 
-  **TODO: Fill out when delete implemented for real**
 * **Notes:**
-Method is not yet implemented will return 501 for authorized callers 
+
+ This endpoint is still under construction and continuous improvement, so please note that the specs and definitions may change.

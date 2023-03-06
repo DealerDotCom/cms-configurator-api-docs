@@ -8,7 +8,7 @@ End points should include the API version number as part of the path. New versio
 | Action | Http Method | URL |
 | ---- | ---- | ---- |
 | [Create Page](./endpoints/pages/create.md) | POST | /api/{version}/pages |
-| [Delete Page](./endpoints/pages/delete.md) | POST | /api/{version}/pages/delete |
+| [Delete Page](./endpoints/pages/delete.md) | DELETE | /api/{version}/pages |
   
 ### Authentication
 Calls requires an API Key that can be provided to you by request. The API key request should contain a list of siteIds to be associated with your key. Once given your API you should include this key in your request headers to authenticate. 

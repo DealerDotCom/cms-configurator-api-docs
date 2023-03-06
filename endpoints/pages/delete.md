@@ -24,7 +24,7 @@ Method call to remove a sitemap entry from a given site
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `DELETE request received for [siteId] and [page_alias]`
+    **Content:** `DELETE request processed for [siteId] and [page_alias]`
  
 * **Error Response:**
 

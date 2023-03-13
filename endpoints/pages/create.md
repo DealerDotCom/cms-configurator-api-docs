@@ -63,6 +63,11 @@
   * **Code:** 201 <br />
     **Content:** `{ url: "{domain}/your-created-page.html" }`
  
+* **Partial Content Success Response:**
+  * **Code:** 206 <br />
+    **Content:** `{ url: "{domain}/your-created-page.html", message: "Page created but there was an issue: <issueEncountered>" }`
+> *In the event of a partial content response do not worry your page has been created. You can try to update your pages content using the [PATCH](./update.md) end point and providing the URL returned from this end point. 
+ 
 * **Error Response:**
 
   * **Code:** 406 NOT ACCEPTABLE <br />
@@ -72,8 +77,6 @@
 
   * **Code:** 500 INTERNAL SERVER ERROR <br />
     **Content:** TBD
-    
-> *You may see messages about failures to post metadata and/or content. Your page was still created and you can use the Composer interface to fill out any missing content.*
 
 * **Sample Call:**
 ```

@@ -65,7 +65,7 @@
  
 * **Partial Content Success Response:**
   * **Code:** 206 <br />
-    **Content:** `{ url: "{domain}/your-created-page.html", message: "Page created but there was an issue: <issueEncountered>" }`
+    **Content:** `{ url: "{domain}/your-created-page.html", message: "Page created but there was an issue saving the following: <issueEncountered>" }`
 > *In the event of a partial content response do not worry your page has been created. You can try to update your pages content using the [PATCH](./update.md) end point and providing the URL returned from this end point. 
  
 * **Error Response:**
@@ -83,9 +83,9 @@
  curl --location --request POST 'https://www.domain.com/api/v1/pages' \
 --header 'Accept: application/json' \
 --header 'x-api-key: yourProvidedAPIKey' \
+--header 'ddc-site-id: targetSiteId' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-        "siteId": "targetSiteId",
         "pageId":  "SOURCE_PAGE_ID", 
         "title": {
           "en_US": "Api Page Title"

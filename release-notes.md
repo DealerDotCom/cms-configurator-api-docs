@@ -3,7 +3,6 @@ All notable releases to this project will be documented in this file.
 
 ## [3/21/2023]
 **Added**
-* X-CoxAuto-Correlation-Id tracing header
 * page per site limitations
 * PATCH mechanism for updating content/metadata 
 * Content Locale validation with *x-disable-locale-validation* header to bypass 
@@ -13,6 +12,7 @@ All notable releases to this project will be documented in this file.
 * API key authentication to use query instead of scan
 * Release notes and Documentation
 **Added**
+* X-CoxAuto-Correlation-Id tracing header
 * POST mechanism
 * DELETE mechanism 
 

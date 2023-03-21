@@ -51,6 +51,7 @@ In the example payload above you can see we provided pageId `v9_CONTENT_RAW_FULL
 | --- | --- | --- |
 | x-api-key | Yes | API Key required to authenticate and allow request to perform the operation |
 | ddc-site-id | Yes | Site ID that the request is aimed to perform changes |
+| x-disable-locale-validation | No | Pass as true for the API to ignore missing locale errors |
 
 ## Responses
 

@@ -1,40 +1,39 @@
-**Delete Page**
-----
-Method call to remove a sitemap entry from a given site
+# Delete Page
 
-* **URL**
-/api/{version}/pages
+Use the DELETE method on `/api/v1/pages` endpoint for delete page by path on a specific site.
 
-* **Method:**
-  `DELETE`
-  
-*  **Headers**
+## URL Parameters
 
-   **Required:**
- 
-   `x-api-key=[string]` - API Key required to authenticate and allow request to perform the operation </br>
-   `ddc-site-id=[string]` - Site ID that the request is aimed to perform changes
-  
-* **URL Params**
-  
-  **Required:**
- 
-   `path=[string]`
+You must send a request with the path as a query parameter
 
-* **Success Response:**
+```
+  /api/v1/pages?page=/delete-me.htm
+```
 
-  * **Code:** 200 <br />
-    **Content:** `DELETE request processed for [siteId] and [page_alias]`
- 
-* **Error Response:**
+## HTTP Headers
 
-  * **Code:** 400 BAD REQUEST <br />
-    **Content:** `Payload invalid: Path required for DELETE action`
+| Name | Required | Description |
+| --- | --- | --- |
+| x-api-key | Yes | API Key required to authenticate and allow request to perform the operation |
+| ddc-site-id | Yes | Site ID that the request is aimed to perform changes |
 
-  OR
+## Responses
 
-  * **Code:** 500 INTERNAL SERVER ERROR <br />
-    **Content:** Server Error Message
+| Code | Error | Message | Addt'l Info |
+| --- | --- | --- | --- |
+| 200 | Success | DELETE request processed for [siteId] and [page_alias] | |
+| 400 | Bad Request | Payload invalid: Path required for DELETE action | |
+| 500 | Internal Server Error | TBD | |
+
+## Sample Call
+
+```
+ curl --location --request DELETE 'https://www.domain.com/api/v1/pages?path=/page-to-delete.htm' \
+--header 'Accept: application/json' \
+--header 'x-api-key: yourProvidedAPIKey' \
+--header 'ddc-site-id: targetSiteId' \
+--header 'Content-Type: application/json' \
+```
 
 * **Notes:**
 

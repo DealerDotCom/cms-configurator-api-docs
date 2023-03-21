@@ -3,6 +3,8 @@ All notable releases to this project will be documented in this file.
 
 ## [3/21/2023]
 **Added**
+* Soft cap on created pages. 
+* Service Rate limiting handling
 * page per site limitations
 * PATCH mechanism for updating content/metadata 
 * Content Locale validation with *x-disable-locale-validation* header to bypass 

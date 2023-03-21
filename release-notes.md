@@ -1,14 +1,14 @@
 # Release Notes
 All notable releases to this project will be documented in this file. 
 
-this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [3/21/2023]
+**Added**
+* X-CoxAuto-Correlation-Id tracing header
+* page per site limitations
+* PATCH mechanism for updating content/metadata 
+* Content Locale validation with *x-disable-locale-validation* header to bypass 
 
-# V1 
-## [0.0.3] - Unreleased
-* PATCH mechanism
-* Content Locale validation 
-
-## [0.0.2]
+## [3/12/2023]
 **Updated**
 * API key authentication to use query instead of scan
 * Release notes and Documentation
@@ -16,7 +16,7 @@ this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 * POST mechanism
 * DELETE mechanism 
 
-## [0.0.1] 
+## [2/14/2023]
 **Added**
 * API key authentication
 * Release notes and Documentation

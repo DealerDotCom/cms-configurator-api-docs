@@ -1,34 +1,14 @@
 # Update Page Content/Metadata
 
-  This endpoint works for updating content and metadata on an already existing page.
+This endpoint works for updating content and metadata on an already existing page.
 
-* **URL**
+`/api/{version}/pages?path={path}`
+## Query Param 
+*Optional:*
+**path** - path of page to update, if not provided payload must contain a paths by locale property as seen below
+## Request Payload
 
-  /api/{version}/pages?path={path}
-
-* **Method:**
-  
-  `PATCH`
-  
-*  **Headers**
-
-   **Required:**
- 
-   `x-api-key=[string]` - API Key required to authenticate and allow request to perform the operation </br>
-   `ddc-site-id=[string]` - Site ID that the request is aimed to perform changes
-
-*  **URL Params**
-
-   **Required:**
- 
-   `version=[string]` - API version, a string that specifies the version of the API the developer wants to contact. Current valid value is `v1`
-
-   **Optional:**
-   
-   `path=[string]` - Path to perform updates on. If this does not exist Update will fallback to payload.path
-
-* **Data Params**
-
+You must `PATCH` the content and/or metadata to update on the page. An example of a request payload is:
 ```
   {
     "path": {
@@ -52,26 +32,28 @@
     }
   }
 ```
-* **Success Response:**
 
-  * **Code:** 201 <br />
-    **Content:** `{ url: "{domain}/your-updated-page.html" }`
- 
-* **Error Response:**
+## HTTP Headers
 
-  * **Code:** 406 NOT ACCEPTABLE <br />
-    **Content:** TBD
+| Name | Required | Description |
+| --- | --- | --- |
+| x-api-key | Yes | API Key required to authenticate and allow request to perform the operation |
+| ddc-site-id | Yes | Site ID that the request is aimed to perform changes |
+| x-disable-locale-validation | No | Pass as true for the API to ignore missing locale errors |
 
-  OR
+## Responses
 
-  * **Code:** 500 INTERNAL SERVER ERROR <br />
-    **Content:** TBD
-    
-> *You may see messages about failures to post metadata and/or content. Your page was still created and you can use the Composer interface to fill out any missing content.*
+| Code | Use | Content | Addt'l Info |
+| --- | --- | --- | --- |
+| 201 | Success | `{ url: "{domain}/your-created-page.html" }` | |
+| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.html", message: "There was an issue saving the following: <issueEncountered>" }` | |
+| 406 | Not Acceptable | TBD | |
+| 500 | Internal Server Error | TBD | |
 
-* **Sample Call:**
+## Sample Call
+
 ```
- curl --location --request POST 'https://www.domain.com/api/v1/pages?path=/existing-page-path.htm' \
+ curl --location --request PATCH 'https://www.domain.com/api/v1/pages?path=/existing-page-path.htm' \
 --header 'Accept: application/json' \
 --header 'x-api-key: yourProvidedAPIKey' \
 --header 'ddc-site-id: yoursiteid' \
@@ -95,6 +77,7 @@
         }
       }'
 ```
+
 
 * **Notes:**
 

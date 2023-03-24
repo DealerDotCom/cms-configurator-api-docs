@@ -13,7 +13,7 @@ You must `POST` the content used to create the page. An example of a request pay
       "en_US": "Api Page Title" 
     },
     "path": {
-      "en_US": "/api-page-path.html" 
+      "en_US": "/api-page-path.htm" 
     },
     "addToXMLSitemap": true,
     "addToHTMLSitemap": false,
@@ -57,8 +57,8 @@ In the example payload above you can see we provided pageId `v9_CONTENT_RAW_FULL
 
 | Code | Use | Content | Addt'l Info |
 | --- | --- | --- | --- |
-| 201 | Success | `{ url: "{domain}/your-created-page.html" }` | |
-| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.html", message: "Page created but there was an issue saving the following: <issueEncountered>" }` | Do not worry your page has been created. You can try to update your pages content using the [PATCH](./update.md) end point and providing the URL returned from this end point. |
+| 201 | Success | `{ url: "{domain}/your-created-page.htm" }` | |
+| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.htm", message: "Page created but there was an issue saving the following: <issueEncountered>" }` | Do not worry your page has been created. You can try to update your pages content using the [PATCH](./update.md) end point and providing the URL returned from this end point. |
 | 406 | Not Acceptable | TBD | |
 | 500 | Internal Server Error | TBD | |
 
@@ -76,7 +76,7 @@ In the example payload above you can see we provided pageId `v9_CONTENT_RAW_FULL
           "en_US": "Api Page Title"
         },
         "path": {
-          "en_US": "/api-page-path.html"
+          "en_US": "/api-page-path.htm"
         },
         "addToXMLSitemap": true,
         "addToHTMLSitemap": false,

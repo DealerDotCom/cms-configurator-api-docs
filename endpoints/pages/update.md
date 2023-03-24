@@ -12,7 +12,7 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
 ```
   {
     "path": {
-      "en_US": "/api-page-path.html" 
+      "en_US": "/api-page-path.htm" 
     },
     "metadata": {
       "title": {
@@ -45,8 +45,8 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
 
 | Code | Use | Content | Addt'l Info |
 | --- | --- | --- | --- |
-| 201 | Success | `{ url: "{domain}/your-created-page.html" }` | |
-| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.html", message: "There was an issue saving the following: <issueEncountered>" }` | |
+| 201 | Success | `{ url: "{domain}/your-created-page.htm" }` | |
+| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.htm", message: "There was an issue saving the following: <issueEncountered>" }` | |
 | 406 | Not Acceptable | TBD | |
 | 500 | Internal Server Error | TBD | |
 

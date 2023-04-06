@@ -14,6 +14,9 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
     "path": {
       "en_US": "/api-page-path.htm" 
     },
+    title: {
+      "en_US": "Updated Page Title" 
+    },
     "metadata": {
       "title": {
         "en_US": "META TITLE"
@@ -59,6 +62,9 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
 --header 'ddc-site-id: yoursiteid' \
 --header 'Content-Type: application/json' \
 --data-raw '{
+        title: {
+          "en_US": "Updated Page Title" 
+        },
         "metadata": {
           "title": {
             "en_US": "META TITLE"
@@ -78,7 +84,3 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
       }'
 ```
 
-
-* **Notes:**
-
- This endpoint is still under construction and continuous improvement, so please note that the specs and definitions may change.

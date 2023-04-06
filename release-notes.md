@@ -1,5 +1,8 @@
 # Release Notes
 All notable releases to this project will be documented in this file. 
+## [4/6/2023] 
+**Updated**
+* PATCH mechanism now supports pageTitles
 
 ## [3/21/2023]
 **Added**

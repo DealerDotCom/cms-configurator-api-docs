@@ -47,22 +47,14 @@ You must send a request with the path as a query parameter
         "en_US": "/index.htm"
     },
     "content": {
-        "content1": {
+         "content1": {
+            "siteId": "meeseeksdemo",
             "contentId": "ce7f931af7af4373befecc44b42487ff",
-            "languages": {
-                "en_US": {
-                    "content": "Creating New Content  In a draft - Test",
-                    "locale": "en_US"
-                }
-            }
-        },
-        "content2": {
-            "contentId": "198c08d2b2a14d25842b75161400ee61",
-            "languages": {
-                "en_US": {
-                    "content": "Here at [Dealership Name] --  Meeseeks' Code Box Demo, it is our mission to be the automotive home of drivers in the Burlington, VT area. We provide a vast selection of new and used vehicles, exceptional car care and customer service with a smile.<p><font face=\"DDC Heading Font Face\" size=\"3\"><br></font>Speaking of <a href=\"/new-inventory/index.htm\">new [Dealership Make] models</a>, you have your pick of our showroom. Our local dealership keeps a great stock of <a href=\"/used-inventory/index.htm\">used cars, trucks, and SUVs</a> in inventory. With competitive prices offered on every pre-owned model for sale on our lot, you won't find a reason to visit any other dealership in Btv VT. </p>",
-                    "locale": "en_US"
-                }
+            "languages": [
+                "en_US"
+            ],
+            "content": {
+                "en_US":  "Here at [Dealership Name] --  Meeseeks' Code Box Demo, it is our mission to be the automotive home of drivers in the Burlington, VT area. We provide a vast selection of new and used vehicles, exceptional car care and customer service with a smile.<p><font face=\"DDC Heading Font Face\" size=\"3\"><br></font>Speaking of <a href=\"/new-inventory/index.htm\">new [Dealership Make] models</a>, you have your pick of our showroom. Our local dealership keeps a great stock of <a href=\"/used-inventory/index.htm\">used cars, trucks, and SUVs</a> in inventory. With competitive prices offered on every pre-owned model for sale on our lot, you won't find a reason to visit any other dealership in Btv VT. </p>"
             }
         }
     },

@@ -9,6 +9,7 @@ End points should include the API version number as part of the path. New versio
 | ---- | ---- | ---- |
 | [Create Page](./endpoints/pages/create.md) | POST | /api/{version}/pages |
 | [Delete Page](./endpoints/pages/delete.md) | DELETE | /api/{version}/pages |
+| [Get Page](./endpoints/pages/get.md) | GET | /api/{version}/pages |
 | [Update Page Contents](./endpoints/pages/update.md) | PATCH | /api/{version}/pages |
   
 ### Authentication

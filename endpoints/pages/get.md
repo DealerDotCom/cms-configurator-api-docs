@@ -64,9 +64,6 @@ You must send a request with the path as a query parameter
         },
         "description": {
             "en_US": "[Dealership Name] sells and services [Dealership Make] vehicles in the greater [Dealership City] [Dealership State] area. "
-        },
-        "keywords": {
-            "en_US": "Meeseeks' site for demos"
         }
     }
 }

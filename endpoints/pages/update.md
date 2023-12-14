@@ -23,9 +23,6 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
       },
       "description": {
         "en_US": "META DESCRIPTION"
-      },
-      "keywords": {
-        "en_US":  "METATAGS1 METATAGS2"
       }
     },
     "content": {
@@ -71,9 +68,6 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
           },
           "description": {
             "en_US": "META DESCRIPTION"
-          },
-          "keywords": {
-            "en_US":  "METATAGS1 METATAGS2"
           }
         },
         "content": {

@@ -23,9 +23,6 @@ You must `POST` the content used to create the page. An example of a request pay
       },
       "description": {
         "en_US": "META DESCRIPTION"
-      },
-      "keywords": {
-        "en_US":  "METATAGS1 METATAGS2"
       }
     },
     "content": {
@@ -86,9 +83,6 @@ In the example payload above you can see we provided pageId `v9_CONTENT_RAW_FULL
           },
           "description": {
             "en_US": "META DESCRIPTION"
-          },
-          "keywords": {
-            "en_US":  "METATAGS1 METATAGS2"
           }
         },
         "content": {

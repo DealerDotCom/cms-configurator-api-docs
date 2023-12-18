@@ -1,5 +1,9 @@
 # Release Notes
 All notable releases to this project will be documented in this file. 
+## [12/**/2023]
+**Removed**
+Removed keywords from Metadata functionality.
+
 ## [6/1/2023] 
 **Updated**
 * Increased cap on created pages.

@@ -27,6 +27,9 @@ Content:
     "Message": "User is not authorized to access this resource with an explicit deny"
 }
 ```
+
+A `403` can also come from the `/pages` endpoints themselves once you're authenticated. For example, a caller lacking permission on the referenced page. Check the response: our API always includes an `...Correlation-Id` header and a `{ "name": "string", "message": "string" }` body. If neither is present, the request was rejected before reaching our code (invalid key/site, or blocked upstream) — retrying with the same payload won't help.
+
 **TODO: create/link to getting started guide**
 
 ### CORS

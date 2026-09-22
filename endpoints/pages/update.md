@@ -45,9 +45,11 @@ You must `PATCH` the content and/or metadata to update on the page. An example o
 
 | Code | Use | Content | Addt'l Info |
 | --- | --- | --- | --- |
-| 201 | Success | `{ url: "{domain}/your-created-page.htm" }` | |
+| 200 | Success |  | |
 | 206 | Partial Content Success | `{ url: "{domain}/your-created-page.htm", message: "There was an issue saving the following: <issueEncountered>" }` | |
-| 406 | Not Acceptable | TBD | |
+| 400 | Bad Request | `{ name: "string", message: "string" }` | Invalid payload, locale, or content window ID |
+| 403 | Forbidden | `{ name: "string", message: "string" }` | Caller lacks permission on the existing page |
+| 404 | Not Found | `{ name: "string", message: "string" }` | Referenced path not found |
 | 500 | Internal Server Error | TBD | |
 
 ## Sample Call

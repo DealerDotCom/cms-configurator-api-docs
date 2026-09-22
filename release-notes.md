@@ -1,5 +1,12 @@
 # Release Notes
 All notable releases to this project will be documented in this file. 
+
+
+## [9/14/2026]
+**Updated**
+Split 400/406 error responses into 400, 403, 404, 409, and 429 on POST, PATCH, and DELETE `/pages`
+Error response bodies now use a consistent `{ name, message }` shape
+
 ## [12/**/2023]
 **Removed**
 Removed keywords from Metadata functionality.

@@ -55,12 +55,8 @@ In the example payload above you can see we provided pageId `v9_CONTENT_RAW_FULL
 | Code | Use | Content | Addt'l Info |
 | --- | --- | --- | --- |
 | 201 | Success | `{ url: "{domain}/your-created-page.htm" }` | |
-| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.htm", message: "There was an issue saving the following: <issueEncountered>" }` | |
-| 400 | Bad Request | `{ name: "string", message: "string" }` | Invalid payload, locale, or content window ID |
-| 403 | Forbidden | `{ name: "string", message: "string" }` | Caller lacks permission on a referenced existing page |
-| 404 | Not Found | `{ name: "string", message: "string" }` | A referenced path does not exist |
-| 409 | Conflict | `{ name: "string", message: "string" }` | A page already exists at the requested path |
-| 429 | Too Many Requests | `{ name: "string", message: "string" }` | Site has reached its page-count limit |
+| 206 | Partial Content Success | `{ url: "{domain}/your-created-page.htm", message: "Page created but there was an issue saving the following: <issueEncountered>" }` | Do not worry your page has been created. You can try to update your pages content using the [PATCH](./update.md) end point and providing the URL returned from this end point. |
+| 406 | Not Acceptable | TBD | |
 | 500 | Internal Server Error | TBD | |
 
 ## Sample Call

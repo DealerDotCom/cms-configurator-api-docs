@@ -24,8 +24,6 @@ You must send a request with the path as a query parameter
 | 200 | Success | DELETE request processed for [siteId] and [page_alias] | |
 | 400 | Bad Request | Payload invalid: Path required for DELETE action | |
 | 400 | Bad Request | Payload invalid: DELETE only allowed on SITEBUILDER or API pages, please check path | |
-| 403 | Forbidden | `{ name: "string", message: "string" }` | Caller lacks permission on the existing page |
-| 404 | Not Found | `{ name: "string", message: "string" }` | Referenced path not found |
 | 500 | Internal Server Error | TBD | |
 
 ## Sample Call

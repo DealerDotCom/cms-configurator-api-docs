@@ -37,7 +37,7 @@ All calls through the API are subject to rate limiting. Your calls to the API sh
 **TODO: create/link to page with retry examples**  
 
 ### Reporting Issues: 
-Issues with this API can be reported by opening a [GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). 
+Issues with this API can be reported via email (internal communication). Thank you.
 
 ### **Notes:**
 This API is currently under development and subject to change.
